@@ -1,7 +1,13 @@
-function takeANumber(line, person) {
+/* function takeANumber(line, person) {
   let position = line.length + 1;
   line.push(person);
   return `Welcome, ${person}. You are number ${position} in line.`;
+}*/
+var customerNum = 0;
+function takeANumber(line) {
+  customerNum++;
+  line.push(customerNum);
+  return `You are number ${customerNum}.`;
 }
 
 function nowServing(line) {
